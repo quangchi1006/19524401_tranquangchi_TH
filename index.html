@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px auto;
+            padding: 0px;
+
+        }
+
+        body {
+            background-image: url('ảnh/hinh-nen.jpg');
+        }
+
+        .clear {
+            clear: both;
+        }
+
+        .wrapper {
+            height: auto;
+            width: 1089px;
+            background-color: aqua;
+        }
+
+        nav {
+            height: 50px;
+            width: 1089px;
+            background-color: azure;
+            line-height: 50px;
+        }
+
+        header {
+            width: 1089px;
+            height: 150px;
+            background-image: url('ảnh/images.jpg');
+        }
+
+        .content {
+            height: 300px;
+            width: 1089px;
+            background-color: beige;
+        }
+
+        footer {
+            width: 100%;
+            width: 130px;
+            background-color: rgb(99, 76, 110);
+        }
+
+        aside {
+            width: 40%;
+            height: 100%;
+            background-color: aqua;
+            float: left;
+        }
+
+        section {
+            width: 58%;
+            height: 100%;
+            float: left;
+        }
+
+        .menu li {
+            float: left;
+            height: 100%;
+            width: 150px;
+            list-style: none;
+            text-indent: 16px;
+        }
+
+        a {
+            color: blue;
+            text-decoration: none;
+
+        }
+
+        .menu li :hover {
+            background-color: antiquewhite;
+        }
+
+        li:hover>a {
+            color: rgb(77, 77, 110);
+        }
+
+        .menu li .submenu {
+            display: block;
+
+        }
+
+        nav span form {
+            padding: 3px;
+            margin-right: 3px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <nav>
+            <ul class="menu">
+                <li><a href="">HOME</a></li>
+                <li><a href="">SERVICE</a></li>
+                <li><a href="">CONTACT</a></li>
+                <ul class="submenu">
+                    <li><a href="">PHONE</a></li>
+                    <li><a href="">INERNET</a></li>
+                    <li><a href="">TIVI</a></li>
+                </ul>
+                <li><a href="">ABOUT</a></li>
+                <li><a href="">HELF</a></li>
+            </ul>
+
+
+        </nav>
+        <header></header>
+        <div class="clear"></div>
+        <div class="content">
+            <aside>
+                <article>
+                    <h1>HOAT DONG 1</h1>
+                </article>
+                <article>
+                    <h1>HOAT DONG 2</h1>
+                </article>
+                <article>
+                    <h1>HOAT DONG 3</h1>
+                </article>
+            </aside>
+            <section>
+                <h1>ĐĂNG KÝ THÔNG TIN LÀ CCCD</h1>
+                <form action="">
+                    <fieldset>
+                        <legend>THÔNG TIN CỦA BẠN</legend>
+                        <label for="lblHoTen">Họ Tên:</label>
+                        <input type="text" name="txtHoTen" id="txtHoTen" required placeholder="Ho ten"> <br>
+                        <label for="lblHoTen">số cmnd:</label>
+                        <input type="text" name="txtHoTen" id="txtHoTen" required placeholder="số cmnd"> <br>
+                        <label for="lblHoTen">Nơi thường trú:</label>
+                        <input type="text" name="txtHoTen" id="txtHoTen" required placeholder="Nơi thường trú"> <br>
+
+                    </fieldset>
+                </form>
+            </section>
+        </div>
+        <footer></footer>
+    </div>
+</body>
+
+</html>
